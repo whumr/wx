@@ -1,0 +1,947 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <title>
+
+
+        融资城---资讯大厅---系统资讯---中小企业资产盘活监管系统
+
+
+    </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="/style/public.css" rel="stylesheet" type="text/css"/>
+    <link href="/style/alltop.css" rel="stylesheet" type="text/css"/>
+    <meta name="keywords" content="融资,投资,贷款,资产,创投"/>
+    <meta name="description" content="融资城是中国最大中小企业资产盘活监管系统，为您提供数量庞大的资金，资产，项目，需求，融资投资，贷款担保，投资理财，租赁典当，信托基金，创业投资，风险投资，小额贷款等投融资信息和管理服务！"/>
+    <link href="/news/style/news.css?cssVersion=2015013022" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+<script>document.domain = window.location.hostname.split('.').reverse().slice(0,2).reverse().join('.');</script>
+<script type="text/javascript" src="/js/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/js/352.js?cssVersion=2015013022" charset="utf-8"></script>
+<script type="text/javascript" src="/js/menu_fixed.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/js_top.js?cssVersion=2015013022"></script>
+<link href="/style/alltop.css?cssVersion=2015013022" rel="stylesheet" type="text/css"/>
+<link href="/style/login.css?cssVersion=2015013022" rel="stylesheet" type="text/css"/>
+<!-- /导航条 -->
+<!-- 顶部登陆栏 -->
+<div class="roofwar">
+    <div class="allroofbar">
+        <div class="l" style="display:none" id="zcshe2">
+            您好，欢迎来到融资城！[<strong><a class="a1" onClick="noLoginShowForm({url:document.location.href});return false" id="loginlink"
+                                   href="http://172.16.10.31:8080/news/news.do">请登录</a></strong>] <strong>[<a class="a1" href="https://register.352.com/login/reg_1.do">免费注册</a>]</strong>
+        </div>
+        <div class="l" style="display:none" id="zcshe1">
+            <div class="nihao">您好，网主&nbsp;</div>
+            <div class="name" id="top_zcWelcome">###member4session.account###</div>
+            <div class="out">
+                <a href="http://www.352.com/member/logout.do">退出</a>
+                <span style="cursor: pointer" onclick="showNewMessage();"><a onclick="return false;">消息( <strong id="chat_short_message">0</strong> )</a></span>&nbsp;
+                <span style="cursor: pointer" onclick="showCommunicationMgr('partner_message');partnerInviteClick(document.getElementById('left_menu_invite'));"><a onclick="return false;">邀请( <strong id="countRequest">0</strong> )</a></span>
+            </div>
+        </div>
+        <div class="r">
+
+            <div class="rlink"><a href="http://www.352.com/harborII/serverHallLogonAction!directEnterServerHall.dox" onClick="checkNameCertAndHarborState({url:this.href});return false"><strong class="style1">我的服务厅</strong></a></div>
+            <div class="rlink"><a href="http://www.352.com/member/financer/entrance.do" onClick="noLoginShowForm({url:this.href});return false"><strong class="style1">我是服务商</strong></a></div>
+            <div class="rlink">
+                <a class="a_drop" style="cursor:pointer;" onmouseover="document.getElementById('clientlink').style.display='block';" onmouseout="document.getElementById('clientlink').style.display='none';">移动访问下载</a>
+                <ul id="clientlink" style="display:none;" onmouseover="document.getElementById('clientlink').style.display='block';" onmouseout="document.getElementById('clientlink').style.display='none';">
+                    <li><a  href="http://www.352.com/mobile/index.jsp" target="_blank">iPhone设备端</a></li>
+                    <li><a  href="http://www.352.com/mobile/android.jsp" target="_blank">Android设备端</a></li>
+                </ul>
+            </div>
+            <div class="rlink"><a href="http://www.352.com/member/index.jsp"><strong>网主中心</strong></a></div>
+            <div class="rlink"><a href="http://www.352.com/help/index.jsp">帮助中心</a></div>
+            <div class="rlink"><a href="http://english.352.com">English</a></div>
+        </div>
+    </div>
+</div>
+<!-- 顶部登录栏 -->
+<!-- index 头部 -->
+<form action="/information/advancedsearchh.jsp" method="post" name="zc" id="zc">
+    <!-- 头部 -->
+    <div class="allhead">
+        <div class="futtitle">
+
+
+
+            <div class="logo0"><a class="indexlink" href="http://www.352.com/" title="融资城服务银幕"></a></div>
+
+        </div>
+        <div class="center_s">
+            <div class="centermap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <img src="http://www.352.com/images/top2013/centertitle_19.jpg"  />
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="search">
+                <input class="input" name="query" id="query" type="hidden" />
+                <input class="input" name="q" id="q" value=""
+                       type="text" />
+                <span class="search_bu" onclick="return topSearch();">搜索</span>
+                <input type="submit" onclick="return topSearch();" value="" style="position:absolute; width:0px; height:0px; filter:alpha(Opacity=0); opacity: 0;" >
+                <a id="top_search_pull" class="pull" title="锁定范围搜索" onClick="changeDisplay();" style="cursor:pointer;"></a>
+                <div class="search_popup" id="top_search_popup" style="display:none;">
+                    <div class="search_popup_box" id="u11">
+
+                        <span><input type="checkbox" checked="checked"  value="服务厅" id="u11_input" name="type" onclick="checkThis(this)"><label for="u11_input">服务厅</label></span>
+                        <span><input type="checkbox" checked="checked"  value="服务需求" id="u12_input" name="type" onclick="checkThis(this)"><label for="u12_input">服务需求</label></span>
+                        <span><input type="checkbox" checked="checked"  value="服务资讯" id="u13_input" name="type" onclick="checkThis(this)"><label for="u13_input">服务资讯</label></span>
+                        <span><input type="checkbox" checked="checked"  value="融资城资讯" id="u14_input" name="type" onclick="checkThis(this)"><label for="u14_input">融资城资讯</label></span>
+                        <span><input type="checkbox" checked="checked"  value="网主" id="u15_input" name="type" onclick="checkThis(this)"><label for="u15_input">网主</label></span>
+                        <span><input type="checkbox" checked="checked"  value="服务帮助" id="u16_input" name="type" onclick="checkThis(this)"><label for="u16_input">服务帮助</label></span>
+                        <span><input type="checkbox" checked="checked"  value="全选" id="u17_input" onclick="checkAll(this)"><label for="u17_input">全选</label></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightinfo">
+            <div class="bird"><a href="http://www.352.com/sh/sh_com_menu.jsp" target="_blank"><img src="/images/top2013/centermap_02.jpg" width="177" height="85"  /></a></div>
+            <div class="link">
+                <a href="http://www.352.com/trade/TradewebTradingZcbFirstAction.x" target="_blank">我要投资</a>
+                <span>&nbsp;</span>
+                <a href="http://www.352.com/member/serviceharbor/iWantTzOrRz.do?flag=2" onclick="checkNameCertAndHarborState({url:this.href});return false">我要融资</a>
+            </div>
+        </div>
+    </div>
+    <!-- /头部 -->
+</form>
+
+<script type="text/javascript">
+    zcribNum = '210'; sign = '3'; isCertification = true;contextPath = ''; STATIC_URL = 'http://www.352.com'; MEMBER_IMG_URL  = '/uploadfiles/member/';PARAM_MSG =  ''; ATTR_MSG = '';
+    readyTopDiv();
+</script>
+
+
+<!-- 导航菜单 -->
+<div class="alltopmenu" id="mainnavi">
+
+
+    <div class="navone">
+        <a class="a_off" href="http://www.352.com/">服务银幕</a>
+        <a class="a_off" href="http://www.352.com/service/center.jsp">服务中心</a>
+        <a class="a_on" href="http://www.352.com/service/tower.jsp">服务大厦</a>
+        <a class="a_off" href="http://www.352.com/harborII/welcomeAction!welcome.dox">服务厅区域</a>
+    </div>
+
+
+
+    <!-- 楼层直达 -->
+
+
+
+    <!-- 楼层直达 -->
+    <div class="q_nav_elevator">
+        <a class="elevator_bu" id="elevator_bu" href="###" onclick="switchDisplaySlideElevator('elevator')"></a>
+        <div class="elevator" id="elevator" style="display: none;">
+            <div class="elevator_ins">
+                <iframe class="elevator_iframe"  src="" frameborder=0></iframe>
+                <ul>
+                    <li><span class="span f11"></span><a class="link" href="http://www.352.com/fcc/index.do">学习大厅</a></li>
+                    <li><span class="span f10"></span><a class="link" href="http://www.352.com/member">网主中心</a></li>
+                    <li><span class="span f9"></span><a class="link" href="http://match.352.com/match/jbpzq">赛事大厅</a></li>
+                    <li><span class="span f8"></span><a class="link" href="http://news.352.com/news">资讯大厅</a></li>
+                    <li><span class="span f7"></span><a class="link" href="http://marketing.352.com/marketing">约会大厅</a></li>
+                    <li><span class="span f6"></span><a class="link" href="http://certification.352.com/certificate">认证大厅</a></li>
+                    <li><span class="span f5"></span><a class="link" href="https://supervise.352.com/supervisor/index.jsp">监管大厅</a></li>
+                    <li><span class="span f4"></span><a class="link" href="http://www.352.com/safewall/index.do">网安大厅</a></li>
+                    <li><span class="span f3"></span><a class="link" href="http://www.352.com/trade/TradewebTradingZcbFirstAction.x">融资广场</a></li>
+                    <li><span class="span f2"></span><a class="link" href="http://www.352.com/information">需求大厅</a></li>
+                    <li><span class="span f1"></span><a class="link" href="http://www.352.com/service/center.jsp">服务中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /楼层直达 -->
+
+    <script type="text/javascript" charset="UTF-8" src="/service/js/layout.js"></script>
+
+
+
+
+    <!-- 大厅布局 -->
+
+
+
+    <link href="/style/mansion.css" rel="stylesheet" type="text/css"/>
+    <!-- 大厅平面图 -->
+    <div class="q_nav_plan">
+        <a class="plan_bu" id="plan_bu" href="###"  onclick="switchDisplaySlide('mapinfobox')"></a>
+        <div class="mapinfobox" id="mapinfobox" style="display:none;" >
+            <div class="mapinfobox_ins">
+                <iframe class="mapinfobox_ifram"  src="" frameborder=0></iframe>
+                <!-- 楼层图 -->
+
+
+
+
+
+
+
+
+
+
+                <!-- 8层 id=8 -->
+                <div class="mapinfo">
+                    <div class="title">
+                        <div class="b0"></div>
+                        <div class="b1"><a href="http://www.352.com/index.jsp">融资城</a></div>
+                        <div class="b2"></div>
+                        <div class="b1"><a href="http://www.352.com/service/tower.jsp">服务大厦</a></div>
+                        <div class="b2"></div>
+                        <div class="b1"><a href="http://news.352.com/news"><strong>资讯大厅</strong></a></div>
+                        <div class="b3"></div>
+                    </div>
+                    <div class="foortam">
+                        <div class="smallgifbg" id="pngid_8_0" style="display:none;" ></div>
+                        <div class="smallgifbg" id="pngid_8_1" style="display:none;" ><img src="/images/top2013/png_6_1.gif" border="0" usemap="#Map_f8_1"  /><map name="Map_f8_1" id="Map_f8_1"><area shape="poly" onclick='window.location.href="http://news.352.com/news/news.do?call=newslist&ttid=428&root=yes"' onmouseover="mansinnChangeClass(1,8,1);" onmouseout="mansinnChangeClass(0,8,1);" coords="294,46,287,52,286,146,290,157,334,171,372,201,382,205,466,158,469,143,401,76,315,44" /></map></div>
+                        <div class="smallgifbg" id="pngid_8_2" style="display:none;" ><img src="/images/top2013/png_6_2.gif" border="0" usemap="#Map_f8_2"  /><map name="Map_f8_2" id="Map_f8_2"><area shape="poly" onclick='window.location.href="http://news.352.com/news/news.do?call=newslist&ttid=1742&root=yes"' onmouseover="mansinnChangeClass(1,8,2);" onmouseout="mansinnChangeClass(0,8,2);" coords="488,178,473,172,391,216,387,231,397,273,390,318,392,332,477,380,491,375,506,329,508,232" /></map></div>
+                        <div class="smallgifbg" id="pngid_8_3" style="display:none;" ><img src="/images/top2013/png_6_3.gif" border="0" usemap="#Map_f8_3"  /><map name="Map_f8_3" id="Map_f8_3"><area shape="poly" onclick='window.location.href="http://news.352.com/news/news.do?call=newslist&ttid=1850"' onmouseover="mansinnChangeClass(1,8,3);" onmouseout="mansinnChangeClass(0,8,3);" coords="464,393,385,348,372,347,339,376,298,393,286,396,287,495,296,509,355,497,436,452,470,409" /></map></div>
+                        <div class="smallgifbg" id="pngid_8_4" style="display:none;" ><img src="/images/top2013/png_6_4.gif" border="0" usemap="#Map_f8_4"  /><map name="Map_f8_4" id="Map_f8_4"><area shape="poly" onclick='window.location.href="http://news.352.com/news/expert_view_list.jsp"' onmouseover="mansinnChangeClass(1,8,4);" onmouseout="mansinnChangeClass(0,8,4);" coords="267,497,270,404,265,392,217,379,187,351,173,345,87,392,86,408,124,453,198,496,258,509" /></map></div>
+                        <div class="smallgifbg" id="pngid_8_5" style="display:none;" ><img src="/images/top2013/png_6_5.gif" border="0" usemap="#Map_f8_5"  /><map name="Map_f8_5" id="Map_f8_5"><area shape="poly" onclick='window.location.href="http://news.352.com/news/news.do?call=newslist&ttid=426"' onmouseover="mansinnChangeClass(1,8,5);" onmouseout="mansinnChangeClass(0,8,5);" coords="68,373,82,378,163,331,167,317,160,275,166,232,166,219,85,173,68,172,48,231,52,332"/></map></div>
+                        <div class="smallgifbg" id="pngid_8_6" style="display:none;" ><img src="/images/top2013/png_6_6.gif" border="0" usemap="#Map_f8_6"  /><map name="Map_f8_6" id="Map_f8_6"><area shape="poly" onclick='window.location.href="http://news.352.com/news"' onmouseover="mansinnChangeClass(1,8,6);" onmouseout="mansinnChangeClass(0,8,6);" coords="88,141,88,157,169,204,185,203,215,175,256,160,270,151,271,57,259,44,187,61,125,103"/></map></div>
+                        <img src="/images/top2013/floortam_6p.gif" width="550" height="550" border="0" usemap="#Map_f8"  />
+                        <map name="Map_f8" id="Map_f8">
+                            <area shape="poly" coords="275,176,339,199,370,259,354,331,286,375,213,351,178,294,199,211" onclick="window.open('http://www.352.com/service/center.jsp', '_blank');"/>
+                            <area shape="poly" onmouseover="mansinnChangeClass(1,8,1);" onmouseout="mansinnChangeClass(0,8,1);" coords="294,46,287,52,286,146,290,157,334,171,372,201,382,205,466,158,469,143,401,76,315,44" href="#" />
+                            <area shape="poly" onmouseover="mansinnChangeClass(1,8,2);" onmouseout="mansinnChangeClass(0,8,2);" coords="488,178,473,172,391,216,387,231,397,273,390,318,392,332,477,380,491,375,506,329,508,232" href="#" />
+                            <area shape="poly" onmouseover="mansinnChangeClass(1,8,3);" onmouseout="mansinnChangeClass(0,8,3);" coords="464,393,385,348,372,347,339,376,298,393,286,396,287,495,296,509,355,497,436,452,470,409" href="#" />
+                            <area shape="poly" onmouseover="mansinnChangeClass(1,8,4);" onmouseout="mansinnChangeClass(0,8,4);" coords="267,497,270,404,265,392,217,379,187,351,173,345,87,392,86,408,124,453,198,496,258,509" href="#" />
+                            <area shape="poly" onmouseover="mansinnChangeClass(1,8,5);" onmouseout="mansinnChangeClass(0,8,5);" coords="68,373,82,378,163,331,167,317,160,275,166,232,166,219,85,173,68,172,48,231,52,332" href="#" />
+                            <area shape="poly" onmouseover="mansinnChangeClass(1,8,6);" onmouseout="mansinnChangeClass(0,8,6);" coords="88,141,88,157,169,204,185,203,215,175,256,160,270,151,271,57,259,44,187,61,125,103" href="#" />
+                        </map>
+                        <div class="foor_f8_0" onmouseover="mansinnChangeClass(1,8,0);" onmouseout="mansinnChangeClass(0,8,0);" onclick="window.open(this.childNodes[1].href, '_blank');return false;"><span class="ico_0_8_0" id="icoid_8_0"></span><a  class="icotext" id="link_8_0" href="http://www.352.com/service/center.jsp" target="_blank">服务总台</a></div>
+                        <div class="foor_f8_1" onmouseover="mansinnChangeClass(1,8,1);" onmouseout="mansinnChangeClass(0,8,1);" onclick="window.location.href=this.childNodes[1].href"><span class="ico_0_8_1" id="icoid_8_1"></span><a  class="icotext" id="link_8_1" href="http://news.352.com/news/news.do?call=newslist&ttid=428&root=yes">系统资讯</a></div>
+                        <div class="foor_f8_2" onmouseover="mansinnChangeClass(1,8,2);" onmouseout="mansinnChangeClass(0,8,2);" onclick="window.location.href=this.childNodes[1].href"><span class="ico_0_8_2" id="icoid_8_2"></span><a  class="icotext" id="link_8_2" href="http://news.352.com/news/news.do?call=newslist&ttid=1742&root=yes">社会资讯</a></div>
+                        <div class="foor_f8_3" onmouseover="mansinnChangeClass(1,8,3);" onmouseout="mansinnChangeClass(0,8,3);" onclick="window.location.href=this.childNodes[1].href"><span class="ico_0_8_3" id="icoid_8_3"></span><a  class="icotext" id="link_8_3" href="http://news.352.com/news/news.do?call=newslist&ttid=1850">案例分析</a></div>
+                        <div class="foor_f8_4" onmouseover="mansinnChangeClass(1,8,4);" onmouseout="mansinnChangeClass(0,8,4);" onclick="window.location.href=this.childNodes[1].href"><span class="ico_0_8_4" id="icoid_8_4"></span><a  class="icotext" id="link_8_4" href="http://news.352.com/news/expert_view_list.jsp">专家视点</a></div>
+                        <div class="foor_f8_5" onmouseover="mansinnChangeClass(1,8,5);" onmouseout="mansinnChangeClass(0,8,5);" onclick="window.location.href=this.childNodes[1].href"><span class="ico_0_8_5" id="icoid_8_5"></span><a  class="icotext" id="link_8_5" href="http://news.352.com/news/news.do?call=newslist&ttid=426">金融政策</a></div>
+                        <div class="foor_f8_6" onmouseover="mansinnChangeClass(1,8,6);" onmouseout="mansinnChangeClass(0,8,6);" onclick="window.location.href=this.childNodes[1].href"><span class="ico_0_8_6" id="icoid_8_6"></span><a  class="icotext" id="link_8_6" href="http://news.352.com/news">服务银幕</a></div>
+
+                    </div>
+                </div>
+
+
+
+
+                <!-- /楼层图 -->
+            </div>
+        </div>
+    </div>
+    <!-- /大厅平面图 -->
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 8f 资讯大厅 -->
+<div class="allpath">
+    <div class="l"><span class="floorico_08"></span><span class="titleword">资讯大厅</span></div>
+    <div class="r">
+        <a class="a_off" href="http://news.352.com/news">服务银幕</a>
+        <a class="a_on" href="http://news.352.com/news/newslist_ttid-428_root-yes.html">系统资讯</a>
+        <a class="a_off" href="http://news.352.com/news/newslist_ttid-1742_root-yes.html">社会资讯</a>
+        <a class="a_off" href="http://news.352.com/news/newslist_ttid-1850.html">案例分析</a>
+        <a class="a_off" href="http://news.352.com/news/expert_view_list.html">专家视点</a>
+
+        <a class="a_off" href="http://news.352.com/news/newslist_ttid-426.html">金融政策</a>
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+<!-- /index 头部 -->
+<div class="line10px"></div>
+
+
+<div class="adimg960">
+    <!--资讯大厅广告开始--><a name="246" onclick="addOnclick(this);" href='http://www.352.com/harborII/welcomeAction!welcome.dox'  target='_blank' name='246'><img src='http://www.352.com/uploadfiles/advertisement/1381568710395.gif' width='960.0' height='96.0' alt=''/></a><!-- 所属广告位ZXN04 -->
+    <!--资讯大厅广告结束-->
+</div>
+<div class="wrapper">
+<!-- 模板13  -->
+<div class="allcrumb">
+    <div class="l">
+
+
+
+
+
+
+
+
+
+        <a href='/'>融资城</a>&nbsp;＞&nbsp;<a href='/news/index.html'>资讯大厅</a>&nbsp;＞&nbsp;<a href='/news/newslist_ttid-428.html'>系统资讯</a>
+    </div>
+</div>
+<!-- 左边 -->
+<div class="L2a">
+
+
+
+
+
+
+<div class="box">
+<!-- 模板24 -->
+<div class="forum_24_1">
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62674.html" target="_blank" title="《启功》资产包提前满额 融资城监管系统再显强大实力">《启功》资产包提前满额 融资城监管系统再</a>
+    </div>
+    <div class="r style9">2015-01-30</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62673.html" target="_blank" title="杨崇勇常务副省长一行来访融资城网络考察科技金融监管系统">杨崇勇常务副省长一行来访融资城网络考察科</a>
+    </div>
+    <div class="r style9">2015-01-30</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62672.html" target="_blank" title="社团篇：融资城网络深圳市湘潭商会服务中心挂牌成立">社团篇：融资城网络深圳市湘潭商会服务中心</a>
+    </div>
+    <div class="r style9">2015-01-29</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62671.html" target="_blank" title="谢昀杉增肥出演少年启功结缘融资城">谢昀杉增肥出演少年启功结缘融资城</a>
+    </div>
+    <div class="r style9">2015-01-29</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62655.html" target="_blank" title="张绍刚首次“触电”担纲《启功》主演 融资城献宝">张绍刚首次“触电”担纲《启功》主演 融资</a>
+    </div>
+    <div class="r style9">2015-01-28</div>
+</div>
+<div class="listline"></div>
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62653.html" target="_blank" title="霍英东集团旗下南沙创建探访融资城  搭建互联网金融平台助力南沙大发展">霍英东集团旗下南沙创建探访融资城  搭建</a>
+    </div>
+    <div class="r style9">2015-01-27</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62650.html" target="_blank" title="融资城两特许服务商积极服务网主 短时间晋升挂包商行列">融资城两特许服务商积极服务网主 短时间晋</a>
+    </div>
+    <div class="r style9">2015-01-27</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62648.html" target="_blank" title="俞剑红、丁荫楠携《启功》主演亲临融资城与网主约会献宝">俞剑红、丁荫楠携《启功》主演亲临融资城与</a>
+    </div>
+    <div class="r style9">2015-01-26</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62646.html" target="_blank" title="深圳广西商会名誉会长杨朝仁携企业家来访融资城热议资产包">深圳广西商会名誉会长杨朝仁携企业家来访融</a>
+    </div>
+    <div class="r style9">2015-01-23</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62639.html" target="_blank" title="安全高效来自监管系统 资产包成网主约会热门主题">安全高效来自监管系统 资产包成网主约会热</a>
+    </div>
+    <div class="r style9">2015-01-22</div>
+</div>
+<div class="listline"></div>
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62638.html" target="_blank" title="龙王湖18号土地资产包提前满额 优化投资组合实现收益最大化">龙王湖18号土地资产包提前满额 优化投资</a>
+    </div>
+    <div class="r style9">2015-01-22</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62636.html" target="_blank" title="融资城受邀出席顶级互联网金融研讨 首创投融资监管技术系统获高度认可">融资城受邀出席顶级互联网金融研讨 首创投</a>
+    </div>
+    <div class="r style9">2015-01-21</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62635.html" target="_blank" title="融资城香港分公司总裁Yigal“抢包”成功">融资城香港分公司总裁Yigal“抢包”成</a>
+    </div>
+    <div class="r style9">2015-01-21</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62633.html" target="_blank" title="东莞小额房产资产包协作组第一次会议圆满成功">东莞小额房产资产包协作组第一次会议圆满成</a>
+    </div>
+    <div class="r style9">2015-01-20</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62632.html" target="_blank" title="园区篇：第106家！融资城网络广东省皮具行业协会服务中心挂牌成立">园区篇：第106家！融资城网络广东省皮具</a>
+    </div>
+    <div class="r style9">2015-01-20</div>
+</div>
+<div class="listline"></div>
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62605.html" target="_blank" title="融资城系统支持网主深圳定向运动协会举办定向越野公开赛">融资城系统支持网主深圳定向运动协会举办定</a>
+    </div>
+    <div class="r style9">2015-01-15</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62602.html" target="_blank" title="纪震副区长考察融资城 盛赞网络资产盘活监管系统">纪震副区长考察融资城 盛赞网络资产盘活监</a>
+    </div>
+    <div class="r style9">2015-01-14</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62600.html" target="_blank" title="园区篇：第105家！融资城网络甘肃白银平川经济开发区服务中心挂牌成立">园区篇：第105家！融资城网络甘肃白银平</a>
+    </div>
+    <div class="r style9">2015-01-13</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62598.html" target="_blank" title="融资城特许服务商组织约会珠海企业家分享互联网金融投融资心得">融资城特许服务商组织约会珠海企业家分享互</a>
+    </div>
+    <div class="r style9">2015-01-13</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62579.html" target="_blank" title="融资城系统支持窖主俱乐部新春酒会  轻松投融资畅享优质品味生活">融资城系统支持窖主俱乐部新春酒会  轻松</a>
+    </div>
+    <div class="r style9">2015-01-12</div>
+</div>
+<div class="listline"></div>
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62578.html" target="_blank" title="财富满贯不甘平庸 融资城为上市招募优秀人才">财富满贯不甘平庸 融资城为上市招募优秀人</a>
+    </div>
+    <div class="r style9">2015-01-12</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62565.html" target="_blank" title="融资城出席“2015青影之夜”创作发布会 扩展影视资产包合作渠道">融资城出席“2015青影之夜”创作发布会</a>
+    </div>
+    <div class="r style9">2015-01-12</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62564.html" target="_blank" title="园区篇：第104家！融资城网络深圳华南城物流园服务中心挂牌成立">园区篇：第104家！融资城网络深圳华南城</a>
+    </div>
+    <div class="r style9">2015-01-12</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62563.html" target="_blank" title="融资城成立国际英语俱乐部 配合海外上市推进国际化战略 ">融资城成立国际英语俱乐部 配合海外上市推</a>
+    </div>
+    <div class="r style9">2015-01-09</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62552.html" target="_blank" title="东莞各园区服务中心联合成立小额资产包协作组">东莞各园区服务中心联合成立小额资产包协作</a>
+    </div>
+    <div class="r style9">2015-01-09</div>
+</div>
+<div class="listline"></div>
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62551.html" target="_blank" title="东莞服务中心召开园区特许服务商业务交流会">东莞服务中心召开园区特许服务商业务交流会</a>
+    </div>
+    <div class="r style9">2015-01-09</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62545.html" target="_blank" title="香港中小企国际联盟企业家探访融资城寻求互联网金融合作">香港中小企国际联盟企业家探访融资城寻求互</a>
+    </div>
+    <div class="r style9">2015-01-08</div>
+</div>
+
+
+<div class="row">
+    <div class="l" >
+        [<a class="style1" href="/news/newslist_ttid-428.html">系统资讯</a>]&nbsp;
+        <a href="/news/62540.html" target="_blank" title="权益质押融资提前6天申购满额  新颖投融资模式受网主追捧">权益质押融资提前6天申购满额  新颖投融</a>
+    </div>
+    <div class="r style9">2015-01-07</div>
+</div>
+
+
+
+</div>
+
+<!-- /模板24 -->
+</div>
+<!-- 模板13 -->
+
+
+
+<br />
+<div class="page" align="center">
+    <form name="pageto" id="pageto" method="get" action="/news/news.do">
+        <input type="hidden" name="pageSize" value="" />
+        <input type="hidden" name="call" value="newslist" />
+        <input type="hidden" name="ttid" value="428" />
+        <input type="hidden" name="root" value="" />
+        <table id=paginate border=0 width=90% align=center cellPadding=0 cellSpacing=0><tr><td align='center'>共843条记录  当前第1页/分31页 首页&nbsp;上一页&nbsp;<a href="javascript:goToPage(2);">下一页</a>&nbsp;<a href="javascript:goToPage(31);">末页</a><input value=1 id="cursor" name="cursor" type="text" size="4"><a href="javascript:void(0)" onclick="javascript:goToPage_1();">前往</a></td></tr></table>
+    </form>
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- /左边 -->
+<!-- 右边 -->
+<div class="R2a">
+
+
+    <!-- 热门资讯榜 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 热门资讯榜 -->
+
+
+    <div class="box">
+
+        <div class="alltitle2">
+            <div class="l">热门资讯榜</div>
+            <div class="r"></div>
+        </div>
+
+        <div class="forum_19">
+
+            <div class="row"><span>1</span><a href="/news/62648.html" target="_blank" title="俞剑红、丁荫楠携《启功》主演亲临融资城与网主约会献宝">俞剑红、丁荫楠携《启功》主演亲临融资城与网主约会献</a></div>
+
+            <div class="row"><span>2</span><a href="/news/62673.html" target="_blank" title="杨崇勇常务副省长一行来访融资城网络考察科技金融监管系统">杨崇勇常务副省长一行来访融资城网络考察科技金融监管</a></div>
+
+            <div class="row"><span>3</span><a href="/news/62653.html" target="_blank" title="霍英东集团旗下南沙创建探访融资城  搭建互联网金融平台助力南沙大发展">霍英东集团旗下南沙创建探访融资城  搭建互联网金融</a></div>
+
+            <div class="row"><span>4</span><a href="/news/62650.html" target="_blank" title="融资城两特许服务商积极服务网主 短时间晋升挂包商行列">融资城两特许服务商积极服务网主 短时间晋升挂包商行</a></div>
+
+            <div class="row"><span>5</span><a href="/news/62655.html" target="_blank" title="张绍刚首次“触电”担纲《启功》主演 融资城献宝">张绍刚首次“触电”担纲《启功》主演 融资城献宝</a></div>
+
+            <div class="row"><span>6</span><a href="/news/62674.html" target="_blank" title="《启功》资产包提前满额 融资城监管系统再显强大实力">《启功》资产包提前满额 融资城监管系统再显强大实力</a></div>
+
+            <div class="row"><span>7</span><a href="/news/62671.html" target="_blank" title="谢昀杉增肥出演少年启功结缘融资城">谢昀杉增肥出演少年启功结缘融资城</a></div>
+
+            <div class="row"><span>8</span><a href="/news/62672.html" target="_blank" title="社团篇：融资城网络深圳市湘潭商会服务中心挂牌成立">社团篇：融资城网络深圳市湘潭商会服务中心挂牌成立</a></div>
+
+            <div class="row"><span>9</span><a href="/news/62649.html" target="_blank" title="银行民工快哭了，">银行民工快哭了，</a></div>
+
+            <div class="row"><span>10</span><a href="/news/62664.html" target="_blank" title="深圳互联网金融企业扎堆前海">深圳互联网金融企业扎堆前海</a></div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="line10px"></div>
+
+    <div class="ad_img2">
+        <!--资讯大厅广告开始--><a href="http://www.352.com/trading/" onclick="addOnclick(this);" target="_blank" name="129"><img src="http://www.352.com/uploadfiles/advertisement/1347245150196.gif" width="360.0" height="180.0" alt=""/></a><!-- 所属广告位ZXN02 -->
+        <!--资讯大厅广告结束-->
+    </div>
+    <div class="line10px"></div>
+    <!-- 编辑推荐  -->
+
+
+
+
+
+
+
+
+
+
+    <!-- 编辑推荐 -->
+
+    <div class="box">
+        <div class="alltitle2">
+            <div class="l">编辑推荐</div>
+            <div class="r"></div>
+        </div>
+
+        <div class="line3px"></div>
+
+        <div class="forum_21">
+
+
+            <div class="row">
+                <div class="l"><a href="/news/62676.html" target="_blank" title="杨崇勇常务副省长一行来访融资城网络考察科技金融监管系统">杨崇勇常务副省长一行来访融资城网络考察科</a></div>
+                <div class="r style9">2015-02-02</div>
+            </div>
+
+            <div class="row">
+                <div class="l"><a href="/news/62674.html" target="_blank" title="《启功》资产包提前满额 融资城监管系统再显强大实力">《启功》资产包提前满额 融资城监管系统再</a></div>
+                <div class="r style9">2015-01-30</div>
+            </div>
+
+            <div class="row">
+                <div class="l"><a href="/news/62673.html" target="_blank" title="杨崇勇常务副省长一行来访融资城网络考察科技金融监管系统">杨崇勇常务副省长一行来访融资城网络考察科</a></div>
+                <div class="r style9">2015-01-30</div>
+            </div>
+
+            <div class="row">
+                <div class="l"><a href="/news/62670.html" target="_blank" title="腾讯创始人陈一丹：互联网六大法宝破解中小企业困境">腾讯创始人陈一丹：互联网六大法宝破解中小</a></div>
+                <div class="r style9">2015-01-29</div>
+            </div>
+
+            <div class="row">
+                <div class="l"><a href="/news/62669.html" target="_blank" title="党媒三批网生代电影，矛头指向谁？">党媒三批网生代电影，矛头指向谁？</a></div>
+                <div class="r style9">2015-01-29</div>
+            </div>
+
+            <div class="row">
+                <div class="l"><a href="/news/62664.html" target="_blank" title="深圳互联网金融企业扎堆前海">深圳互联网金融企业扎堆前海</a></div>
+                <div class="r style9">2015-01-28</div>
+            </div>
+
+            <div class="row">
+                <div class="l"><a href="/news/62654.html" target="_blank" title="2015：产业互联网金融元年">2015：产业互联网金融元年</a></div>
+                <div class="r style9">2015-01-27</div>
+            </div>
+
+            <div class="row">
+                <div class="l"><a href="/news/62653.html" target="_blank" title="霍英东集团旗下南沙创建探访融资城  搭建互联网金融平台助力南沙大发展">霍英东集团旗下南沙创建探访融资城  搭建</a></div>
+                <div class="r style9">2015-01-27</div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="line10px"></div>
+    <!--  客户眼里的融资城 -->
+
+
+
+
+
+
+
+
+
+    <!--资讯大厅广告开始--><a name="222" onclick="addOnclick(this);" href='http://www.352.com/harborII/welcome.html'  target='_blank' name='222'><img src='http://www.352.com/uploadfiles/advertisement/1381570011265.gif' width='360.0' height='120.0' alt='实力服务厅，实力机构的服务窗口'/></a><!-- 所属广告位ZX10 -->
+    <!--资讯大厅广告结束-->
+
+    <!-- 客户眼里的融资城 -->
+
+
+</div>
+<!-- /右边 -->
+
+</div>
+
+<script type="text/javascript">
+    function goToPage(pageto){
+        document.pageto.cursor.value=pageto;
+        document.pageto.submit();
+    }
+
+    function goToPage_1(){
+        document.pageto.submit();
+    }
+</script>
+
+
+﻿
+
+
+<link rel="Stylesheet" type="text/css" href="/style/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="/style/floor.css" />
+<script type="text/javascript" src="/member/friends/js/friend.js?cssVersion=2015013022" charset="utf-8"></script>
+<script type="text/javascript" src="/js/ajaxfileuploaddialog.js"></script>
+<div class="line10px"></div>
+<!-- 底部 -->
+<div class="floorwrapper">
+    <div class="floorkeyword">
+        <a title="融资" href="http://www.352.com/financing/finance.html" target="_blank">融资</a>
+        <a title="投资" href="http://www.352.com/financing/investment.html" target="_blank">投资</a>
+        <a title="资金" href="http://www.352.com/financing/capital.html" target="_blank">资金</a>
+        <a title="理财" href="http://www.352.com/financing/moneymanagement.html" target="_blank">理财</a>
+        <a title="贷款" href="http://www.352.com/financing/loanable.html" target="_blank">贷款</a>
+        <a title="典当" href="http://www.352.com/financing/pawnee.html" target="_blank">典当</a>
+        <a title="担保" href="http://www.352.com/financing/guarantee.html" target="_blank">担保</a>
+        <a title="租赁" href="http://www.352.com/financing/renting.html" target="_blank">租赁</a>
+        <a title="风投" href="http://www.352.com/financing/venturer.html" target="_blank">风投</a>
+        <a title="创投" href="http://www.352.com/financing/imbarkinvestment.html" target="_blank">创投</a>
+        <a title="金融" href="http://www.352.com/financing/monetary.html" target="_blank">金融</a>
+        <a title="借贷" href="http://www.352.com/financing/lendmoney.html" target="_blank">借贷</a>
+        <a title="信贷" href="http://www.352.com/financing/creditable.html" target="_blank">信贷</a>
+        <a title="创业" href="http://www.352.com/financing/venture.html" target="_blank">创业</a>
+        <a title="项目" href="http://www.352.com/financing/project.html" target="_blank">项目</a>
+        <a title="招商" href="http://www.352.com/financing/merchants.html" target="_blank">招商</a>
+        <a title="小额贷款" href="http://www.352.com/financing/microloan.html" target="_blank">小额贷款</a>
+        <a title="民间借贷" href="http://www.352.com/financing/privatelending.html" target="_blank">民间借贷</a>
+        <a title="天使投资" href="http://www.352.com/financing/angelinvestment.html" target="_blank">天使投资</a>
+        <a title="基金" href="http://www.352.com/financing/foundation.html" target="_blank">基金</a>
+        <a title="信托" href="http://www.352.com/financing/affiance.html" target="_blank">信托</a>
+        <a title="资产" href="http://www.352.com/financing/assets.html" target="_blank">资产</a>
+    </div>
+    <div class="floorinfo">
+        <div class="icobox"><span class="ico_01"></span></div>
+        <div class="wordline f_row1">
+            <div class="title"><a href="http://www.352.com/about/index.jsp" target="_blank">关于融资城</a></div>
+
+
+
+            <a href="http://job.352.com/hr/index1.html" target="_blank">人才诚聘</a><br />
+            <a class="topsc" href="http://www.352.com/officeSystem/index.jsp" rel="nofollow" onclick="return checkMember();" target="_blank">办公系统</a><br />
+            <a href="http://www.352.com/help/list-help_type-125_cType-126.html" target="_blank">快速入门</a><br />
+            <a href="http://www.352.com/about/shengming.jsp" target="_blank">法律声明</a>
+        </div>
+        <div class="icobox"><span class="ico_02"></span></div>
+        <div class="wordline f_row2">
+            <div class="title"><a href="http://www.352.com/member/security/index.jsp"   target="_blank">安全保障</a></div>
+            <a href="http://www.352.com/member/security/name_by.jsp"  target="_blank">证照验证</a><br />
+            <a href="https://supervise.352.com/supervisor/index.jsp" target="_blank">监管服务</a>
+        </div>
+        <div class="icobox"><span class="ico_03"></span></div>
+        <div class="wordline f_row3">
+            <div class="title">服务帮助 <a class="linkico" href="http://www.352.com/sh/sh_com_menu.jsp" target="_blank"> </a><span class="time">(8:00-24:00)</span></div>
+            服务热线<span class="tel">0755 - 86183777</span> <span class="time">(7X24&nbsp;小时)</span><br />
+            <a href="http://www.352.com/help/index.jsp" target="_blank">帮助中心</a>
+        </div>
+        <div class="rzblogo">
+            <a class="logoimg" href="http://www.352.com/"></a>
+            <div class="line10px"></div>
+            &copy; <a href="http://www.352.com/" >融资城网络服务中心有限公司</a>　版权所有<br />
+            <a href="http://www.352.com/images/www352cn_zz.jpg" target="_blank" >增值电信业务经营许可证 粤B2-20100442</a><br />
+            ICP备案号：粤ICP备100<span onclick="alert('[31]')">95</span>144号
+        </div>
+        <div class="floorico">
+            <a href="http://www.sznet110.gov.cn" target="_blank" rel="nofollow">
+                <img src="/images/wangjing.gif" width="60" height="80" border="0">
+            </a>
+            <span style="display:inline-block;position:relative;width:auto;">
+	            <a href="https://ss.knet.cn/verifyseal.dll?sn=e14022011010646563uqho000000&amp;ct=df&amp;a=1&amp;pa=0.22563387034460902" id="kx_verify" tabindex="-1" target="_blank" kx_type="图标式" style="display:inline-block;">
+                    <img src="/images/cnnic.png" style="border:none;" oncontextmenu="return false;" alt="可信网站">
+                </a>
+            </span>
+        </div>
+    </div>
+</div>
+<!-- /底部 -->
+
+
+
+<div id="communication"></div>
+<script language="javascript" src="/communication/js/main-min.js"></script>
+<script language="javascript" src="/js/comm/comm.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/ajaxfileupload.js"></script>
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9ee5e8baadd4fd8000f63f7e91665495' type='text/javascript'%3E%3C/script%3E"));
+</script>
+&nbsp;
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fcd84449f9d5b37a5fc86a6f755298cbc' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+    $("#modual_news").html('<a href="/news/index.jsp">资讯大厅</a>');
+</script>
+</body>
